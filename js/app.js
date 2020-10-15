@@ -1,18 +1,16 @@
-document.getElementById("defaultOpen").click();
+document.getElementById("attacker-button").click();
 
 
-function openCity(evt, cityName) {
-    var i, fleetTabContent, fleetTabLinks;
-    fleetTabContent = document.getElementsByClassName("fleet-tab-content");
-    for (i = 0; i < fleetTabContent.length; i++) {
-      fleetTabContent[i].style.display = "none";
-    }
-  
-    fleetTabLinks = document.getElementsByClassName("fleet-tab-links");
-    for (i = 0; i < fleetTabLinks.length; i++) {
-      fleetTabLinks[i].className = fleetTabLinks[i].className.replace(" active", "");
-    }
+function openAttackerTab() {
+  document.getElementById("defender-button").classList.remove("active");
+  document.getElementById("attacker-button").classList.add("active");
+  document.getElementById("defender-content").style.display = "none";
+  document.getElementById("attacker-content").style.display = "block";
+}
 
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-  }
+function openDefenderTab() {
+  document.getElementById("attacker-button").classList.remove("active");
+  document.getElementById("defender-button").classList.add("active");
+  document.getElementById("attacker-content").style.display = "none";
+  document.getElementById("defender-content").style.display = "block";
+}

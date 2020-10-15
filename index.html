@@ -14,10 +14,10 @@
         </div>
         <div class="content">
             <div class="fleet-tab">
-                <button class="fleet-tab-links" onclick="openCity(event, 'attacker')" id="defaultOpen">Atakujący</button>
-                <button class="fleet-tab-links" onclick="openCity(event, 'defender')">Obrońca</button>
+                <button class="fleet-tab-links" onclick="openAttackerTab(event, 'attacker')" id="attacker-button">Atakujący</button>
+                <button class="fleet-tab-links" onclick="openDefenderTab(event, 'defender')" id="defender-button">Obrońca</button>
             </div>
-            <div id="attacker" class="fleet-tab-content">
+            <div id="attacker-content" class="fleet-tab-content">
                 <p class="text">Atakujący</p>
                 <p class="text-sm">Wybierz rasę atakującego</p>
                 <form>
@@ -42,9 +42,9 @@
                         <option value="Klan Saar">
                     </datalist>
                 </form>
-                <button class="next-button" onclick="nextTab(event)">Dalej</button>
+                <button class="next-button" onclick="openDefenderTab(event, 'attacker')">Dalej</button>
             </div>
-            <div id="defender" class="fleet-tab-content">
+            <div id="defender-content" class="fleet-tab-content">
                 <p class="text">Obrońca</p>
                 <p class="text-sm">Wybierz rasę obrońcy</p>
                 <form>
