@@ -10,20 +10,66 @@
     </head>
     <body>
         <div class="navbar">
-            <span>Witaj !</span>
+            <span>Floty</span>
         </div>
         <div class="content">
             <div class="fleet-tab">
-                <button class="fleet-tab-links" onclick="openCity(event, 'Attacker')" id="defaultOpen">Atakujący</button>
-                <button class="fleet-tab-links" onclick="openCity(event, 'Defender')">Obrońca</button>
+                <button class="fleet-tab-links" onclick="openCity(event, 'attacker')" id="defaultOpen">Atakujący</button>
+                <button class="fleet-tab-links" onclick="openCity(event, 'defender')">Obrońca</button>
             </div>
-            <div id="Attacker" class="fleet-tab-content">
+            <div id="attacker" class="fleet-tab-content">
                 <p class="text">Atakujący</p>
                 <p class="text-sm">Wybierz rasę atakującego</p>
+                <form>
+                    <input list="attacker-race" name="attacker-race">
+                    <datalist id="attacker-race">
+                        <option value="Sardakk N'orr">
+                        <option value="Federacja Sol">
+                        <option value="Arborekowie">
+                        <option value="Kolektyw Naalu">
+                        <option value="Współjaźń Lizix">
+                        <option value="Emiraty Hakanów">
+                        <option value="Baronia Letnev">
+                        <option value="Koalicja Mentaka">
+                        <option value="Żagwie Muuat">
+                        <option value="Nekrowirus">
+                        <option value="Winnu">
+                        <option value="Uniwersytety Jol-Nar">
+                        <option value="Królestwo Xxcha">
+                        <option value="Plemiona Yssaril">
+                        <option value="Bractwo Yin">
+                        <option value="Widma z Creussa">
+                        <option value="Klan Saar">
+                    </datalist>
+                </form>
+                <button class="next-button" onclick="nextTab(event)">Dalej</button>
             </div>
-            <div id="Defender" class="fleet-tab-content">
+            <div id="defender" class="fleet-tab-content">
                 <p class="text">Obrońca</p>
                 <p class="text-sm">Wybierz rasę obrońcy</p>
+                <form>
+                    <input list="defender-race" name="defender-race">
+                    <datalist id="defender-race">
+                        <option value="Sardakk N'orr">
+                        <option value="Federacja Sol">
+                        <option value="Arborekowie">
+                        <option value="Kolektyw Naalu">
+                        <option value="Współjaźń Lizix">
+                        <option value="Emiraty Hakanów">
+                        <option value="Baronia Letnev">
+                        <option value="Koalicja Mentaka">
+                        <option value="Żagwie Muuat">
+                        <option value="Nekrowirus">
+                        <option value="Winnu">
+                        <option value="Uniwersytety Jol-Nar">
+                        <option value="Królestwo Xxcha">
+                        <option value="Plemiona Yssaril">
+                        <option value="Bractwo Yin">
+                        <option value="Widma z Creussa">
+                        <option value="Klan Saar">
+                    </datalist>
+                    <input type="submit">
+                </form>
             </div>
             <div class="text">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus, erat eu aliquet posuere, est risus posuere nisl, ut faucibus velit ligula sed erat. Curabitur convallis aliquet diam, sit amet tempor risus porttitor id. Pellentesque ultrices lacus tellus, vel scelerisque lectus porta vitae. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer commodo, augue eleifend placerat dictum, purus purus efficitur velit, et tempor sapien dui eget libero. Mauris tristique velit eget orci pharetra, nec tincidunt mi pretium. Aliquam non fermentum lorem. Phasellus eget lectus ac nunc blandit porta ut sit amet nunc. Aliquam luctus tellus mi, at egestas quam consectetur sed. Cras commodo orci sed velit mattis porttitor.

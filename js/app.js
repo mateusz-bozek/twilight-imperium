@@ -12,8 +12,7 @@ function openCity(evt, cityName) {
     for (i = 0; i < fleetTabLinks.length; i++) {
       fleetTabLinks[i].className = fleetTabLinks[i].className.replace(" active", "");
     }
-  
+
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
   }
-
